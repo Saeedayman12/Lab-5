@@ -52,12 +52,10 @@ void collapse(Stack<int> a)
 	while (a.pop(item1) && a.pop(item2))
 	{
 		item = item1 + item2;
-		
+		temp1.push(item);
 	}
-		
-
-
-	
+	while (temp1.pop(item))
+		a.push(item);
 }
 
 
